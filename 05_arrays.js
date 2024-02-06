@@ -46,5 +46,16 @@ let num = [111, 22, 3, 1, 67, 43];
 //console.log(num.sort()); // sorts the array alphabetically
 console.log(num.sort(compare));
 
-console.log(num.reverse()) // reverses the array
+console.log(num.reverse()); // reverses the array
 
+// splice is used to add new elements the array on a particular position by removing some existing elements
+num.splice(2, 3, 101, 102, 103, 104); // returns deleted elements when assigned to a variable
+// 2 is the start index, 3 is the number of elements to be removed starting from index 2
+console.log(num);
+
+// slice creates an array of the elements from the specified index
+let new_num = num.slice(2); 
+console.log(new_num);
+
+let new_num1 = num.slice(2,4); 
+console.log(new_num1);
