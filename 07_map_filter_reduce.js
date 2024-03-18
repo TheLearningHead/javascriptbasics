@@ -1,12 +1,12 @@
 let arr = [32, 13, 34, 15, 19];
 
 // forEach loop accepts 3 arguments
-let ar = arr.forEach((value, index, array)=>{
-    if(index%2===0){
+arr.forEach((value, index, array) => {
+    if (index % 2 === 0) {
         console.log(value)
     }
 })
-console.log(ar)
+// The main difference between forEach anf map is that forEach doesnot create a new array but map does
 
 // Array map method
 // It creates an entirely new array with the values that are returned by the map function
