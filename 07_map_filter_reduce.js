@@ -24,6 +24,7 @@ let a2 = arr.filter((value) => {
 console.log(a2);
 
 // Array reduce method
+// It returns a value
 let a3 = arr.reduce((value1, value2) => {
     return value1 + value2;
 });
