@@ -1,5 +1,13 @@
 let arr = [32, 13, 34, 15, 19];
 
+// forEach loop accepts 3 arguments
+let ar = arr.forEach((value, index, array)=>{
+    if(index%2===0){
+        console.log(value)
+    }
+})
+console.log(ar)
+
 // Array map method
 // It creates an entirely new array with the values that are returned by the map function
 let a = arr.map((value, index, array) => {
