@@ -16,6 +16,7 @@
 // DOM - Children, Parent and Sibling //
 
 // Following works for browsers only
+// By doing console for the following we can get their output in the brower's console
 
 // document.body.childNodes  // gives a list of all the children of body
 // document.body.childNodes[3].childNodes  // gives all the children of the specified child of body
@@ -26,3 +27,18 @@
 
 // document.body.firstElementChild.children[1].parentNode  // it might return a text node, element node or a comment node
 // document.body.firstElementChild.children[1].parentElement  // will always return an element node
+
+// -----------------------------------------------------
+
+// Table Based Navigation
+
+let t = document.body.children[1].firstElementChild
+console.log(t)
+console.log(t.rows)
+console.log(t.caption)
+console.log(t.tHead)
+console.log(t.tFoot)
+console.log(t.tBodies)
+console.log(t.tBodies[0].firstElementChild)
+console.log(t.tBodies[0].firstElementChild.cells)
+console.log(t.tBodies[0].firstElementChild.rowIndex)
