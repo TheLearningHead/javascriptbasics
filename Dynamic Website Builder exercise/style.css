@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card{
+    width: 800px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card:hover{
+    background-color: #272727;
+}
+
+.index{
+    padding: 15px;
+}
+
+.thumbnail{
+    padding: 10px 5px;
+    position: relative;
+}
+
+.image{
+    display: flex;
+}
+
+.image img{
+    height: 100px;
+    size: cover;
+    border-radius: 10px;
+}
+
+.duration{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 22px;
+    left: 236px;
+}
+
+.video-heading{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.details{
+    font-size: 12px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.button{
+    padding: 10px;
+    text-align: center;
+}
+
+.button button{
+    padding: 5px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
