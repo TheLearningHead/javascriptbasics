@@ -1,5 +1,4 @@
 function createCard(index, title, cName, views, monthsOld, duration, thumbnail) {
-    let viewStr
     if (views >= 1000 && views < 1000000) {
         views = views / 1000 + "K"
     }
@@ -30,7 +29,7 @@ function createCard(index, title, cName, views, monthsOld, duration, thumbnail) 
 let count = 0
 let btn = document.getElementById("btn")
 
-// btn.onclick = function displayCard() {
+// btn.onclick = ()=> {
 //     count++
 
 //     let title = "Sigma Web dev"
@@ -43,7 +42,7 @@ let btn = document.getElementById("btn")
 //     createCard(count, title, cName, views, monthsOld, duration, thumbnail)
 // }
 
-btn.addEventListener("click", function displayCard() {
+btn.addEventListener("click", ()=> {
     count++
 
     let title = "Sigma Web dev"
