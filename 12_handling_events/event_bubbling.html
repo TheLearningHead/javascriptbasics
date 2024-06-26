@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            background-color: beige;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .childContainer{
+            background-color: bisque;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .container{
+            background-color: mediumturquoise;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- When a child element is clicked, its parent gets clicked automatically and this series continues upto the last ancestor. This is called event bubbling -->
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                This is a child
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e)=>{
+            e.stopPropagation() // used to stop event from from propagating to the parent element and thus stops event bubbling
+            alert("child was clicked")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e)=>{
+            // e.stopPropagation()
+            alert("childContainer was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e)=>{
+            alert("container was clicked")
+        })
+
+        // -----------------------------------------
+
+        // let getRandomColor = ()=>{
+        //     let val1 = Math.ceil(0 + Math.random() * 255)
+        //     let val2 = Math.ceil(0 + Math.random() * 255)
+        //     let val3 = Math.ceil(0 + Math.random() * 255)
+        //     return `rgb(${val1}, ${val2}, ${val3})`
+        // }
+
+        // setInterval -> Used to perform some tasks after a set time interval
+        // setInterval(()=>{
+        //     document.querySelector(".child").style.backgroundColor = getRandomColor()
+        // }, 1000)
+
+        // clearInterval() -> used to clear the setInterval
+
+        // setTimeout -> Used to perform some tasks just once after a set time interval
+        // setTimeout(()=>{
+        //     document.querySelector(".child").style.backgroundColor = getRandomColor()
+        // }, 5000)
+
+        // clearTimeout -> used to clear the setTimeout
+    </script>
+</body>
+</html>
