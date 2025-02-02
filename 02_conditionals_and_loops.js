@@ -11,7 +11,7 @@ console.log((marks > 10) ? "Yes" : "No") // ternary operator
 if (marks == 10) {
     console.log("You aced the exam");
 }
-else if(marks>5){
+else if (marks > 5) {
     console.log("Passed");
 }
 else {
@@ -46,3 +46,10 @@ while (c <= 5) {
     console.log(c);
     c += 1;
 }
+
+// do-while loop
+let d = 1;
+do {
+    console.log(d);
+    d++;
+} while (d < 5);
