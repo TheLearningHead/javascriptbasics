@@ -24,7 +24,7 @@ console.log(c);
 let d = arr.push(56); // add the given number at the end of the array and returns the new array length
 console.log(d, arr);
 
-let e = arr.shift(); // removes the first element from the array
+let e = arr.shift(); // removes the first element from the array and returs the length of the array
 console.log(e, arr);
 
 let f = arr.unshift(45); // adds the given element at the start of the array and returns the new array length
