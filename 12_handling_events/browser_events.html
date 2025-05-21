@@ -14,29 +14,38 @@
     <button id="btn">Change Content</button>
 
     <script>
-        // let btn = document.getElementById("btn")
+        let btn = document.getElementById("btn")
         // Reference link for events - https://developer.mozilla.org/en-US/docs/Web/Events
 
         // Mouse Events
 
+        // // triggered when the mouse is clicked (pressed and released)
         // btn.addEventListener("click", ()=>{
         //     document.querySelector(".box").innerHTML = "<b>Single Click</b>"
         // })
 
+        // // triggered when the mouse is double clicked
         // btn.addEventListener("dblclick", ()=>{
         //     document.querySelector(".box").innerHTML = "<b>Double Click</b>"
         // })
 
+        // // triggered when the mouse button is pressed down
         // btn.addEventListener("mousedown", (e)=>{
         //     document.querySelector(".box").innerHTML = "<b>Mouse Down</b>"
         // })
 
+        // // triggered when the mouse pointer enters the area of the element
+        // // It is triggered only once when the mouse enters the element, not every time it moves over it.
         // btn.addEventListener("mouseenter", (e)=>{
         //     document.querySelector(".box").innerHTML = "<b>Mouse Enter</b>"
         // })
 
+        // // triggered every time the mouse pointer moves over the specified element.
+        // // You can use it to track the mouse’s position or update something on the page as the mouse moves.
         // btn.addEventListener("mousemove", (e)=>{
-        //     document.querySelector(".box").innerHTML = "<b>Mouse Move</b>"
+        //     // Show the mouse coordinates relative to the button
+        //     document.querySelector(".box").innerHTML =
+        //         `<b>Mouse Move:</b> X: ${e.offsetX}, Y: ${e.offsetY}`;
         // })
 
         // Keyboard Events
@@ -50,7 +59,6 @@
         //     console.log(e)
         //     console.log(e.key)
         // })
-
 
 
         // btn.removeEventListener(event, handler) // removes the event listener

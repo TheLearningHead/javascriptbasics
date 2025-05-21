@@ -29,7 +29,9 @@
     </style>
 </head>
 <body>
-    <!-- When a child element is clicked, its parent gets clicked automatically and this series continues upto the last ancestor. This is called event bubbling -->
+    <!-- When a child (target) element is clicked, its parent element is also clicked moving up the DOM to the last parent element. This is called event bubbling. -->
+    <!-- When a parent element is clicked, its child element is also clicked moving down the DOM to the target element. This is called event capturing. -->
+    
     <div class="container">
         <div class="childContainer">
             <div class="child">
@@ -39,20 +41,35 @@
     </div>
 
     <script>
+        // // Event Bubbling
+        // document.querySelector(".child").addEventListener("click", (e)=>{
+        //     e.stopPropagation() // This will stop the event from bubbling up to the parent elements
+        //     alert("child was clicked")
+        // }, false) // false means event bubbling
+        // // by default it is always false
+
+        // document.querySelector(".childContainer").addEventListener("click", (e)=>{
+        //     // e.stopPropagation()
+        //     alert("childContainer was clicked")
+        // })
+
+        // document.querySelector(".container").addEventListener("click", (e)=>{
+        //     alert("container was clicked")
+        // })
+
+        // Event Capturing
         document.querySelector(".child").addEventListener("click", (e)=>{
-            e.stopPropagation() // used to stop event from from propagating to the parent element and thus stops event bubbling
             alert("child was clicked")
-        })
+        }, true) // true means event capturing  
 
         document.querySelector(".childContainer").addEventListener("click", (e)=>{
-            // e.stopPropagation()
             alert("childContainer was clicked")
-        })
+        }, true)
 
         document.querySelector(".container").addEventListener("click", (e)=>{
             alert("container was clicked")
-        })
-
+        }, true)
+        
         // -----------------------------------------
 
         // let getRandomColor = ()=>{
@@ -62,14 +79,18 @@
         //     return `rgb(${val1}, ${val2}, ${val3})`
         // }
 
-        // setInterval -> Used to perform some tasks after a set time interval
+        // setInterval -> Used to perform some tasks repeatedly after a set time interval
+        
         // setInterval(()=>{
         //     document.querySelector(".child").style.backgroundColor = getRandomColor()
         // }, 1000)
 
         // clearInterval() -> used to clear the setInterval
 
-        // setTimeout -> Used to perform some tasks just once after a set time interval
+        
+        // setTimeout -> Used to perform some tasks after a set time interval
+        // It will only run once after the set time interval
+        
         // setTimeout(()=>{
         //     document.querySelector(".child").style.backgroundColor = getRandomColor()
         // }, 5000)
