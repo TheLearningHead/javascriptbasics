@@ -1,10 +1,11 @@
-// Synchronous programmimg
+// Synchronous programming -> The code is executed in the order it is written.
+
 // console.log("Hello")
 // console.log("Heellloooo")
 
 // ---------------------------------
 
-// Asynchronous programming
+// Asynchronous programming -> The code is executed in a non-blocking manner, allowing other code to run while waiting for a task to complete.
 
 // An asynchronous function gets executed after the execution of the entire script 
 // In other words the execution of the asynchronous script is paused until the remaining script gets executed
@@ -20,7 +21,7 @@
 
 // Callbacks:
 
-// A callback is a function which is passed as an argument inside another function and is then invoked inside the outer function to complete some action.
+// A callback function is a function that is passed as an argument to another function and is executed after the completion of that function
 
 // const callback = (arg) => {
 //     console.log(arg)
@@ -37,6 +38,6 @@
 // loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
 
 
-// "Callback hell" or "Pyramid of Doom" in JavaScript refers to a situation where callbacks are nested within other callbacks several levels deep, making the code difficult to read and maintain
+// "Callback hell" or "Pyramid of Doom" in JavaScript refers to the situation where multiple nested callbacks make the code difficult to read and maintain.
 
 // ----------------------------------------------------------------

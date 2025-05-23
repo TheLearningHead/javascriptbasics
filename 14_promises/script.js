@@ -51,22 +51,22 @@
 //     console.log(value)
 // })
 
-// // p2.catch((error) => {
-// //     console.log("Some error has occured in Promise 2: " + error)
-// // })
+// p2.catch((error) => {
+//     console.log("Some error has occured in Promise 2: " + error)
+// })
 
-// // p2.then((value) => {
-// //     console.log(value)
-// // }, (error) => {
-// //     console.log("Some error has occured in Promise 2: " + error)
-// // })
+// p2.then((value) => {
+//     console.log(value)
+// }, (error) => {
+//     console.log("Some error has occured in Promise 2: " + error)
+// })
 
 // Most common wayfor doing the above
-// // p2.then((value) => {
-// //     console.log(value)
-// // }).catch((error) => {
-// //     console.log("Some error has occured in Promise 2: " + error)
-// // })
+// p2.then((value) => {
+//     console.log(value)
+// }).catch((error) => {
+//     console.log("Some error has occured in Promise 2: " + error)
+// })
 
 // p1.finally(() => {
 //     console.log("finally method executed")
