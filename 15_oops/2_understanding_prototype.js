@@ -10,6 +10,8 @@
 // console.log(multipleBy5.__proto__); // it gives {} as function does not have prototype by default
 
 
+// // Prototype in JavaScript is a mechanism by which objects can inherit properties and methods from other objects.
+
 // // Working with basic prototyping in JavaScript
 // function CreateUser(username, score) {
 //     this.username = username
